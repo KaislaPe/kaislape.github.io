@@ -3,7 +3,7 @@
   --bg: #f5f7fb;
   --card: #ffffff;
   --accent: #fb6f92;
-  --muted: #ffc5d3;
+  --muted: #666;
 }
 *{box-sizing:border-box}
 body{
@@ -43,7 +43,7 @@ body{
   border-radius:8px;
   font-size:15px;
 }
-.nav a.active{background:#f0f6ff;color:var(--accent);font-weight:600}
+.nav a.active{background:#ffc5d3;color:var(--accent);font-weight:600}
 .contact{margin-top:24px;font-size:14px;color:var(--muted)}
 .contact a{color:var(--accent);text-decoration:none}
 
