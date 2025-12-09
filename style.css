@@ -1,119 +1,80 @@
-/* Global layout */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-    color: #222;
+/* Simple responsive layout for the resume site */
+:root{
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --accent: #3366cc;
+  --muted: #666;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg);
+  color:#111;
+}
+.site{
+  display:flex;
+  min-height:100vh;
+  max-width:1100px;
+  margin:24px auto;
+  background:var(--card);
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 6px 20px rgba(20,20,40,0.08);
 }
 
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
-    background: white;
-    border-radius: 12px;
+/* SIDEBAR */
+.sidebar{
+  width:280px;
+  padding:28px;
+  border-right:1px solid #eee;
+  background:linear-gradient(180deg,#fff,#fbfdff);
 }
+.brand h1{
+  margin:0;
+  font-size:20px;
+}
+.role{color:var(--muted);font-size:13px;margin-top:6px}
+.nav{margin-top:20px;display:flex;flex-direction:column;gap:8px}
+.nav a{
+  color:#111;
+  text-decoration:none;
+  padding:8px 10px;
+  border-radius:8px;
+  font-size:15px;
+}
+.nav a.active{background:#f0f6ff;color:var(--accent);font-weight:600}
+.contact{margin-top:24px;font-size:14px;color:var(--muted)}
+.contact a{color:var(--accent);text-decoration:none}
 
-/* Header */
-.header {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
+/* CONTENT */
+.content{
+  flex:1;
+  padding:28px;
 }
+.hero h2{margin:0 0 8px 0;font-size:24px}
+.intro{color:var(--muted);line-height:1.5}
+.more{margin-top:12px;color:var(--muted)}
+.instagram{margin-top:22px}
+.instagram .note{font-size:13px;color:var(--muted)}
+.instagram-embed{margin-top:12px;border:1px dashed #ddd;padding:18px;border-radius:8px;background:#fafafa}
+.embed-placeholder{min-height:160px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:6px;color:var(--muted)}
 
-.header h1 {
-    font-size: 36px;
-    margin-bottom: 5px;
-}
-
-.subtitle {
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.summary {
-    max-width: 600px;
-    margin-bottom: 15px;
-}
-
-.links a {
-    margin-right: 10px;
-    text-decoration: none;
-    color: #3366cc;
-}
-
-/* Main grid */
-.main {
-    padding: 20px 0;
-}
-
-h2 {
-    margin-bottom: 10px;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 5px;
-}
-
-.card {
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-}
-
-.card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.company {
-    color: #666;
-}
-
-.period {
-    color: #888;
-    font-size: 14px;
-}
-
-.card ul {
-    margin-top: 10px;
-    padding-left: 20px;
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-}
-
-.project {
-    border: 1px solid #ddd;
-    padding: 12px;
-    border-radius: 8px;
-}
-
-.project a {
-    color: #3366cc;
-    text-decoration: none;
-}
-
-/* Sidebar */
-.sidebar {
-    border-top: 1px solid #ddd;
-    padding-top: 20px;
-}
-
-.tags span {
-    display: inline-block;
-    background: #eee;
-    padding: 5px 10px;
-    border-radius: 20px;
-    margin: 5px 5px 0 0;
-}
+/* Cards */
+.card{background:linear-gradient(180deg,#fff,#f8fbff);border:1px solid #eef2ff;padding:16px;border-radius:10px;margin-bottom:14px}
+.card h3{margin:0 0 6px 0}
+.card p{margin:0;color:var(--muted);line-height:1.45}
 
 /* Footer */
-.footer {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 12px;
-    color: #777;
+.footer{margin-top:18px;border-top:1px solid #f1f3fb;padding-top:12px;color:var(--muted);font-size:13px}
+.file-note{font-size:12px;color:#9aa; margin-top:6px}
+
+/* Back link */
+.back{display:inline-block;margin-top:10px;color:var(--accent);text-decoration:none;font-weight:600}
+
+/* Responsive */
+@media (max-width:880px){
+  .site{flex-direction:column;margin:12px}
+  .sidebar{width:100%;border-right:none;border-bottom:1px solid #eee}
+  .content{padding:18px}
 }

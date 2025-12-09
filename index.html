@@ -1,116 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kaisla Pehkonen — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="site">
+    <aside class="sidebar">
+      <div class="brand">
+        <h1>Kaisla Pehkonen</h1>
+        <p class="role">Valokuvaaja &amp; Media-osaaja</p>
+      </div>
 
-    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="active">Etusivu</a>
+        <a href="experience.html">Kokemus</a>
+        <a href="skills.html">Taidot</a>
+      </nav>
 
-        <!-- HEADER -->
-        <header class="header">
-            <h1>Your Name</h1>
-            <p class="subtitle">Your Title — Your Location</p>
+      <div class="contact">
+        <h4>Yhteystiedot</h4>
+        <p>+358 45 893773</p>
+        <p><a href="mailto:Huippukaisla@gmail.com">Huippukaisla@gmail.com</a></p>
+        <p>Melakatu 5 B 14<br/>33410 Tampere</p>
+      </div>
+    </aside>
 
-            <p class="summary">
-                I design and build delightful, accessible interfaces.
-                I love solving UX problems and shipping polished, maintainable frontend code.
-            </p>
+    <main class="content">
+      <section class="hero">
+        <h2>Tervetuloa</h2>
+        <p class="intro">
+          Olen sosiaalisesti lahjakas ja viihdyn erilaisten ihmisten kanssa.
+          Osaan työskennellä paineen alla, oppia nopeasti uusia asioita ja toimia hyvin ryhmissä.
+          Olen luova, positiivinen ja ratkaisukeskeinen — tuon hyvää energiaa työyhteisöön.
+        </p>
+        <p class="more">
+          Tässä sivustossa löydät tietoa kokemuksestani ja taidoistani sekä kuviani.
+          Instagram-feed näkyy alla (liitä Instagram-widgetin iframe-koodi ylläpidolta, katso ohje alla).
+        </p>
+      </section>
 
-            <div class="links">
-                <a href="mailto:you@example.com">you@example.com</a>
-                <a href="https://your-website.com">Website</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-            </div>
-        </header>
+      <section class="instagram">
+        <h3>Instagram</h3>
+        <p class="note">Live-feed: liitä kolmannen osapuolen widgetin (esim. SnapWidget, LightWidget, Elfsight) iframe tähän. Alla on paikka, johon voit liittää widgetin tuottaman <code>&lt;iframe&gt;</code>-koodin.</p>
 
-        <!-- MAIN CONTENT -->
-        <main class="main">
-            <section>
-                <h2>Experience</h2>
+        <!-- PLACEHOLDER: paste your widget iframe here (from SnapWidget/LightWidget/Elfsight).
+             Example (replace with real iframe):
+             <iframe src="https://snapwidget.com/embed/..." class="instagram-iframe"></iframe>
+        -->
+        <div id="instagram-embed" class="instagram-embed">
+          <!-- Paste widget iframe for @kaislaphotography here -->
+          <div class="embed-placeholder">
+            <p>Instagram-widget-paikka (@kaislaphotography)</p>
+            <p class="small">Get an embed from SnapWidget / LightWidget / Elfsight and paste the iframe here.</p>
+            <p class="small">Example providers: <a href="https://snapwidget.com" target="_blank" rel="noopener">SnapWidget</a>, <a href="https://lightwidget.com" target="_blank" rel="noopener">LightWidget</a>, <a href="https://elfsight.com" target="_blank" rel="noopener">Elfsight</a>.</p>
+          </div>
+        </div>
+      </section>
 
-                <div class="card">
-                    <div class="card-header">
-                        <div>
-                            <h3>Senior Frontend Engineer</h3>
-                            <p class="company">Acme Corp</p>
-                        </div>
-                        <p class="period">2022 — Present</p>
-                    </div>
-                    <ul>
-                        <li>Led a redesign increasing conversion by 18%.</li>
-                        <li>Built a design system used across 6 teams.</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <div>
-                            <h3>Product Designer</h3>
-                            <p class="company">Startup X</p>
-                        </div>
-                        <p class="period">2019 — 2022</p>
-                    </div>
-                    <ul>
-                        <li>Owned end-to-end product design for mobile and web.</li>
-                        <li>Ran usability tests, reducing support tickets by 25%.</li>
-                    </ul>
-                </div>
-
-            </section>
-
-            <section>
-                <h2>Projects</h2>
-
-                <div class="projects">
-                    <div class="project">
-                        <h3>Portfolio CMS</h3>
-                        <p>A tiny static CMS built with Next.js and Markdown.</p>
-                        <a href="#">View</a>
-                    </div>
-
-                    <div class="project">
-                        <h3>Design System</h3>
-                        <p>Reusable UI components and tokens with documentation.</p>
-                        <a href="#">View</a>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- SIDEBAR -->
-        <aside class="sidebar">
-
-            <div class="card">
-                <h3>Skills</h3>
-                <div class="tags">
-                    <span>React</span>
-                    <span>TypeScript</span>
-                    <span>CSS</span>
-                    <span>Accessibility</span>
-                    <span>Figma</span>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>Contact</h3>
-                <p>Your Location</p>
-                <a href="mailto:you@example.com">you@example.com</a>
-                <br><br>
-                <a href="https://your-website.com">Website</a>
-            </div>
-
-        </aside>
-
-        <footer class="footer">
-            Made with ❤️ — customize this template as you like.
-        </footer>
-
-    </div>
-
+      <footer class="footer">
+        <p>Made with ♥ — Kaisla Pehkonen</p>
+        <p class="file-note">Site content (name, summary, contact info, experience and skills) was taken from your uploaded CV PDF and placed into the site pages. See Kokemus and Taidot pages for details. (Source: uploaded CV.)</p>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
