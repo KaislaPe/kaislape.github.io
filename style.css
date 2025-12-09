@@ -1,9 +1,9 @@
 /* Simple responsive layout for the resume site */
 :root{
-  --bg: #ffc5d3;
+  --bg: #f5f7fb;
   --card: #ffffff;
   --accent: #fb6f92;
-  --muted: #666;
+  --muted: #ffc5d3;
 }
 *{box-sizing:border-box}
 body{
