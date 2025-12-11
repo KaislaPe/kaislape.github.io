@@ -51,6 +51,7 @@ body{
 .content{
   flex:1;
   padding:28px;
+  position: relative;
 }
 .hero h2{margin:0 0 8px 0;font-size:24px}
 .intro{color:var(--muted);line-height:1.5}
@@ -87,13 +88,4 @@ body{
 
   /* Add spacing so text doesn't touch */
   margin: 0 0 20px 30px;
-}
-
-/* Make the container relative so absolute positioning works */
-.content {
-  position: relative;
-}
-
-.content.with-photo {
-  padding-top: 220px; /* create space under the picture */
 }
