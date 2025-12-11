@@ -78,3 +78,19 @@ body{
   .sidebar{width:100%;border-right:none;border-bottom:1px solid #eee}
   .content{padding:18px}
 }
+.top-right-photo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 180px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Make the container relative so absolute positioning works */
+.content {
+  position: relative;
+}
+
