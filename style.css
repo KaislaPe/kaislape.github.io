@@ -79,14 +79,14 @@ body{
   .content{padding:18px}
 }
 .top-right-photo {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  float: right;
   width: 180px;
-  height: auto;
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+  /* Add spacing so text doesn't touch */
+  margin: 0 0 20px 30px;
 }
 
 /* Make the container relative so absolute positioning works */
