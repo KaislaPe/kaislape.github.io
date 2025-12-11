@@ -94,3 +94,6 @@ body{
   position: relative;
 }
 
+.content.with-photo {
+  padding-top: 220px; /* create space under the picture */
+}
